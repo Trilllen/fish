@@ -8,8 +8,11 @@
   <!-- Display the GIF -->
   <img src="fish.gif" alt="Fish GIF" style="max-width:100%; height:auto;">
 
+  <!-- Button to play the WAV file -->
+  <button onclick="document.getElementById('audio').play()">Play Audio</button>
+
   <!-- Audio element to play the WAV file -->
-  <audio autoplay loop hidden>
+  <audio id="audio" hidden>
     <source src="fish.wav" type="audio/wav">
     Your browser does not support the audio element.
   </audio>
